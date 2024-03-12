@@ -1,0 +1,95 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+}
+#app {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: rgb(43, 43, 43); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background-color: #eae7d6;
+  display: flex;
+  justify-content: center;
+}
+fieldset {
+  padding: 3vmin;
+  background: white;
+  width: 50vw;
+  border-radius: 20px;
+  /* margin-left: 100px;*/
+  margin-top: 100px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmin;
+}
+form > div {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 0.5vmin;
+  width: 100%;
+}
+
+form input {
+  /* width: 60vw; */
+  background: #1d3c58;
+  padding: 1vmin;
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgb(255, 255, 255);
+}
+form input:focus {
+  outline: 2px solid rgb(0, 0, 0);
+}
+form input[type="submit"] {
+  background-color: #fdb73a;
+  color: white;
+  width: 50%;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 2vmin;
+}
+/* form input[type="submit"]:hover {
+  width: 60%;
+  background-color: rgb(210, 210, 210);
+} */
+.success {
+  width: 100%;
+  background-color: #1d3c58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 4vmin;
+  border-radius: 10px;
+  font-size: 4vmin;
+  /* display: none; */
+}
+.err {
+  font-size: 1.7vmin;
+  color: red;
+}
+legend {
+  background-color: #1d3c58;
+  color: white;
+  padding: 1vmin;
+  border-radius: 3px;
+}
